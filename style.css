@@ -1,0 +1,113 @@
+/* Estilos base */
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background: #f7f7f7;
+}
+
+#pizzaCreator {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#pizzaCreator h1 {
+  text-align: center;
+}
+
+#ingredients {
+  margin-top: 20px;
+}
+
+.ingredient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.ingredient img {
+  width: 30px;
+  height: 30px;
+}
+.productbtn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(44, 217, 153);
+  border-radius: 30px;
+}
+.productbtn button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+#pizzaAprobada {
+  display: none;
+  padding-bottom: 1000px;
+  background-color: white;
+}
+#pizzaAprobada img {
+  width: 100%;
+}
+.nombreYprecio {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.ingredient label {
+  flex-grow: 1;
+}
+
+.ingredient button {
+  padding: 5px 15px;
+}
+
+.ingredient span {
+  min-width: 30px;
+  text-align: center;
+}
+
+#cancel,
+#confirm {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .ingredient label {
+    font-size: 14px;
+  }
+  .ingredient button {
+    font-size: 25px;
+  }
+}
+.pizzaImg {
+  margin: 0 auto;
+}
+.containerPizza {
+  display: flex;
+  justify-content: center;
+}
+.titulo {
+  display: flex;
+  gap: 20px;
+}
+.botones {
+  display: flex;
+  gap: 15px;
+}
+
+.botones button {
+  background-color: #222;
+  color: white;
+}

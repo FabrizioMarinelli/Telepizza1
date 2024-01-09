@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your Pizza!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="pizzaCreator">
+      <h1>¡Crea tu Pizza!</h1>
+      <div class="containerPizza">
+        <img
+          src="pizza.jpg"
+          alt="Pizza Base"
+          style="width: 80%"
+          class="pizzaImg"
+        />
+      </div>
+
+      <div class="titulo">
+        <h2>Ingredientes</h2>
+        <h2>(<label class="totalIngredientes">0</label>/10)</h2>
+      </div>
+      <div id="ingredients">
+        <!-- Ingredient item -->
+        <div class="ingredient">
+          <img src="salchicha.jpg" alt="" />
+          <div class="nombreYprecio">
+            <label for="sausage">Salchicha</label>
+            <span>$100.00</span>
+          </div>
+          <div class="productbtn">
+            <button onclick="decrease('sausage')">-</button>
+            <span id="sausage">0</span>
+            <button onclick="increase('sausage')">+</button>
+          </div>
+        </div>
+        <div class="ingredient">
+          <img src="queso.jpg" alt="" />
+          <div class="nombreYprecio">
+            <label for="queso">Queso</label>
+            <span>$100.00</span>
+          </div>
+          <div class="productbtn">
+            <button onclick="decrease('queso')">-</button>
+            <span id="queso">0</span>
+            <button onclick="increase('queso')">+</button>
+          </div>
+        </div>
+
+        <div class="ingredient">
+          <img src="aceituna.jpg" alt="" />
+          <div class="nombreYprecio">
+            <label for="aceituna">Aceitunas</label>
+            <span>$100.00</span>
+          </div>
+          <div class="productbtn">
+            <button onclick="decrease('aceituna')">-</button>
+            <span id="aceituna">0</span>
+            <button onclick="increase('aceituna')">+</button>
+          </div>
+        </div>
+        <div class="ingredient">
+          <img src="huevo.jpg" alt="" />
+          <div class="nombreYprecio">
+            <label for="huevo">Huevo</label>
+            <span>$100.00</span>
+          </div>
+          <div class="productbtn">
+            <button onclick="decrease('huevo')">-</button>
+            <span id="huevo">0</span>
+            <button onclick="increase('huevo')">+</button>
+          </div>
+        </div>
+        <div class="ingredient">
+          <img src="cebolla.jpg" alt="" />
+          <div class="nombreYprecio">
+            <label for="cebolla">Cebolla</label>
+            <span>$100.00</span>
+          </div>
+          <div class="productbtn">
+            <button onclick="decrease('cebolla')">-</button>
+            <span id="cebolla">0</span>
+            <button onclick="increase('cebolla')">+</button>
+          </div>
+        </div>
+        <!-- Repeat for each ingredient -->
+      </div>
+      <div class="botones">
+        <button id="cancel">Cancelar</button>
+        <button id="confirm">Confirmar</button>
+      </div>
+    </div>
+    <div id="pizzaAprobada">
+      <img src="pizzaAProbada.png" alt="" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
